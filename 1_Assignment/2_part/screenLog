@@ -1,0 +1,16 @@
+Script started on Tue 16 Sep 2014 07:14:06 PM EDT
+ishan@spec10:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/2_part> make [K[K[K[K[K./[K[Kmake cea[K[Klean
+rm -rf a.out
+rm -rf findAddress
+rm -rf badbuf
+rm -rf PasswordAddr
+clear
+[3;J[H[2Jishan@spec10:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/2_part> make attack
+cc findAddress.c -o findAddress
+cc badbuf.c -o badbuf
+ishan@spec10:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/2_part> ./findAddress 
+ishan@spec10:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/2_part> ./badbuf < PasswordAddr [K 
+login: password: Ownz_U!ishan@spec10:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/2_part> exit
+exit
+
+Script done on Tue 16 Sep 2014 07:14:47 PM EDT

@@ -1,0 +1,110 @@
+Script started on Tue 21 Oct 2014 10:32:59 PM EDT
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ ls
+add_user.h      [0m[01;32mbadbuf.c[0m         [01;32mclient[0m    defs.h  [01;34mheader_files_versions[0m  makefile        passwordVault  symlist.h          update_password.h
+authenticate.h  [01;32mbadbuf_server.c[0m  client.c  demo.h  [01;34mjms_example_codes[0m      [01;34mmy_trial_codes[0m  symbol.h       typescript_server  util.h
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ 
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ make comile[K[K[Kpile
+arm-linux-gnueabi-gcc-4.7 -o badbuf_server badbuf_server.c
+badbuf_server.c: In function ‘welcome’:
+badbuf_server.c:15:1: warning: format not a string literal and no format arguments [-Wformat-security]
+badbuf_server.c: In function ‘goodbye’:
+badbuf_server.c:17:1: warning: format not a string literal and no format arguments [-Wformat-security]
+gcc -o client client.c
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ ftp telnet[K[K[K[K[K[K192.168.1.1
+Connected to 192.168.1.1.
+220 Operation successful
+Name (192.168.1.1:ishan): 
+230 Operation successful
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put badbuf_server
+local: badbuf_server remote: badbuf_server
+200 Operation successful
+150 Ok to send data
+226 Operation successful
+18748 bytes sent in 0.00 secs (110961.2 kB/s)
+ftp> exi[K[K[Kput passwordVault 
+local: passwordVault remote: passwordVault
+200 Operation successful
+150 Ok to send data
+226 Operation successful
+204 bytes sent in 0.00 secs (3018.5 kB/s)
+ftp> ei[Kxit
+221 Operation successful
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ 
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ 
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ telnet 192.1[K681[K[K[K168.1.1
+Trying 192.168.1.1...
+Connected to 192.168.1.1.
+Escape character is '^]'.
+
+
+
+BusyBox v1.14.0 () built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# cd data/video
+# 
+# ls
+[0;0m3tier.jpg[0m              [0;0mbadbuf_server[0m          [1;34mboxes[0m                  [0;0mpasswordVault[0m          [0;0mpolice-notice.html.gz[0m
+# chmod 777 ba# chmod 777 badbuf_server [J
+# ./badbuf[8D# ./badbuf_server [J
+Starting the server....
+Server Up - Socket Created....
+Server Up - Socket Bound...
+Waiting for a client.....
+
+
+..Connection established
+
+Name Received - anudeep
+Password Received - hero
+Welcome to The Machine!
+Client chose option: 1
+
+New password entered = zero
+
+
+Updating Password for user = anudeep...
+Client chose option: 2
+
+User to be added Received = rakshita
+Password for the new user Received - 123
+
+Adding new user = rakshita ...
+
+Client chose option: 3
+
+..Connection established
+
+Name Received - anudeep
+Password Received - hero
+Invalid identity, exiting!
+..Connection established
+
+Name Received - anudeep
+Password Received - zero
+Welcome to The Machine!
+Client chose option: 3
+
+..Connection established
+
+Name Received - rakshita
+Password Received - 123
+Welcome to The Machine!
+
+
+Client chose option: 3
+
+^C^Z[1] + Stopped                    ./badbuf_server
+# 
+# 
+# 
+# ca t  t t     exit
+You have stopped jobs.
+# 
+# Killed
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networksishan@ishan-Lenovo-Y40-70:~/Documents/Networks$ exit
+exit
+
+Script done on Tue 21 Oct 2014 10:38:36 PM EDT

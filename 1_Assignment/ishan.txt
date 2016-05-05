@@ -1,0 +1,11 @@
+main = 0x0.000000 
+&name[123] = 0x7fffffffe010 
+&pw[123] = 0x7fffffffdf90 
+good = 0x40097b , &good = 0x7fffffffdf88 
+evil = 0x400994 , &evil = 0x7fffffffdf80 
+match = 0x400620 
+welcome = 0x4006b8 
+goodbye = 0x4006d7 
+login: password: name = 0x7fffffffe010 
+pw = 0x7fffffffdf90 
+Invalid identity, exiting!

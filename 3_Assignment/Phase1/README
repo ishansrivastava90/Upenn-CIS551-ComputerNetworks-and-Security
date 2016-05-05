@@ -1,0 +1,90 @@
+We have implemented a client-server connection accross the Drone.
+
+The client initially connects to the server on port 10551 and authenticates oneself. After authentication the client gets various options where one can add a new user, update one's password, add a mac address-port , delete a mac-address-port, run shell instructions etc.
+
+Procedure to run the server, when the drone boots:
+-We execute two scripts in a  file named 'rcS' in 'etc/init.d' which is executed at bootup
+-The 1st script ensures that it starts our server program(badbuf_server).
+ - We also made sure that the file is executable using the chmod command.
+-The 2nd script configures the initial settings of iptables to drop everything except the parts on port 10551
+
+-This completes our process to start the server program, when the drone boots.
+
+
+The files that we are using :
+------------------------------
+
+badbuf_server.c : This is the server code which establishes a connection with the client. It creates a connection, authenticates the client and then providea a menu to the client from which the client can execute further instructions.
+
+client.c : This is the client code which connects to the server, enters the login and password. Once, the server authenticates the client, the client can perform other functions (add a new user, update its password, add mac address, delete mac address, run shell instructions and exit).
+
+passwordVault: This contains the list of all valid users and their respective passwords.
+
+update_password.h : This header file contains the code to update the password after an authenticated user logs into the drone.
+
+authenticate.h : This header file contains code for authentication.
+
+add_user.h : This header contains code to add a new user after an authenticated user logs in.
+
+util.h : It contains the code to modify the linked list structure to add new items, retreive values from existing items and modify the passwordVault text file.
+
+symlist.h : This contains the declarations for the linked list structure.
+
+symbol.h : This contains the definition of the structure which is used as a component for the structure defined in sym_list.h
+
+defs.h : These define the values of all global variables.
+
+demo.h : This stores the declarations of various functions called in util.h
+
+mac_binding.h: This contains code to add a mac address along with a port or delete a mac address cum port.
+
+execute_command.h: This contains the code to run the shell and execute commands like ls, pwd etc on server. The results are returned to the client.
+
+encrypt.h: This contains the code to encrypt and decrypt the packets. 
+
+iptables_init_conf.sh: This is run when the dron starts and configures the iptables to a default setting of dropping all incoming packets except on port 10551
+
+
+Typescript and dump files
+--------------------------
+typescript_server: Shows a server runnning on drone and accepting instructions and returning results
+
+typescript_client: Shows a corresponding client giving requests to the server and getting the responses
+
+typescript_iptables: Shows the configuration of iptables at each step after the client requests the server to add/delete MAC addr with some port
+
+tcpdump_packets.pcap: Shows the server-client traffic on port 10551 which is the encrypted data in hex and ascii format.
+
+
+
+Instructions to compile and run :
+---------------------------------
+The makefile contains the compilation for both the client and server side.
+Run make compile to compile both the server and client codes.
+FTP badbuf_server and passwordVault and iptables_init_conf.sh to the drone.
+Run ./badbuf_server to execute the server on the drone OR REBOOT the drone to automatically start the server.
+Execute the iptables_init_conf.sh to configure the iptables initially OR REBOOT the drone to automatically do that 
+Run ./client 192.168.1.1. to execute the client on the client host.
+
+
+Took a tcpdump for the client network on port 10551
+Used the command: 
+sudo tcpdump -i any -vvv -X -n dst port 10551 > tcpdump_packets.pcap
+The file shows the hexcode and the ascii values for the encrypted traffic between drone and
+the client
+
+
+REFERENCES
+------------
+
+For Iptables
+-------------
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04
+http://tecadmin.net/mac-address-filtering-using-iptables/
+https://wiki.archlinux.org/index.php/simple_stateful_firewall#Prerequisites
+
+For tcpdump
+-----------
+http://danielmiessler.com/study/tcpdump/
+
+

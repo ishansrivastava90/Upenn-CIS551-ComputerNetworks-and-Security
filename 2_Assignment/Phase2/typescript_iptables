@@ -1,0 +1,71 @@
+Script started on Wed 05 Nov 2014 02:39:43 AM EST
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIishan@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII$ telnet 192.1681.[K[K.1.1
+Trying 192.168.1.1...
+Connected to 192.168.1.1.
+Escape character is '^]'.
+
+
+
+BusyBox v1.14.0 () built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# cd    iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             MAC 30:3A:64:63:E6:5B tcp dpt:10551
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+# 
+# 
+# 
+# # iptables -L[J
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             MAC 30:3A:64:63:E6:5B tcp dpt:10551
+ACCEPT     tcp  --  anywhere             anywhere             MAC 7C:FA:DF:B7:52:34 tcp dpt:23
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+# 
+# 
+# 
+# 
+# # iptables -L[J
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             MAC 30:3A:64:63:E6:5B tcp dpt:10551
+ACCEPT     tcp  --  anywhere             anywhere             MAC 7C:FA:DF:B7:52:34 tcp dpt:23
+ACCEPT     tcp  --  anywhere             anywhere             MAC 30:3A:64:63:E6:5B tcp dpt:22
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+# 
+# 
+# # iptables -L[J
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             MAC 30:3A:64:63:E6:5B tcp dpt:10551
+ACCEPT     tcp  --  anywhere             anywhere             MAC 30:3A:64:63:E6:5B tcp dpt:22
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+# 
+# 
+# Killed
+]0;ishan@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIishan@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII$ exit
+exit
+
+Script done on Wed 05 Nov 2014 02:44:58 AM EST

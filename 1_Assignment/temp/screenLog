@@ -1,0 +1,51 @@
+Script started on Sun 28 Sep 2014 11:15:06 PM EDT
+ishan@spec08:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/3_part> make attack
+gcc -o findAddress findAddress.c
+gcc -fno-stack-protector -o badbuf badbuf.c -z execstack
+ishan@spec08:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/3_part> ./generate_input.sh | ./badbuf
+
+ls
+1  PasswordAddr  a.out	badbuf	badbuf.c  findAddress  findAddress.c  generate_input.sh  makefile  shell.c  shellcode  typescript  victim  victim.c
+cd ..
+ls
+1_part	2_part	3_part	a.out  badbuf  badbuf.c  input.txt  ishan.txt  makefile  out.txt  overflow64.c	readme.txt
+cd 3	_part
+ls
+1  PasswordAddr  a.out	badbuf	badbuf.c  findAddress  findAddress.c  generate_input.sh  makefile  shell.c  shellcode  typescript  victim  victim.c
+cat ba	dbuf.c
+#include <stdio.h>
+
+int match(char *s1, char *s2) {
+    while( *s1 != '\0' && *s2 != '\0' && *s1 == *s2 ){
+    s1++; s2++;
+
+    }
+return( *s1 - *s2 );
+}
+
+void welcome(char *str) { printf(str); }
+
+void goodbye(char *str) { void exit(); printf(str); exit(1); }
+
+main(){
+
+char name[123], pw[123]; /* passwords are short! */
+printf("%p",&name);
+char *good = "Welcome to The Machine!\n";
+char *evil = "Invalid identity, exiting!\n";
+ 
+printf("login: "); scanf("%s", name);
+printf("password: "); scanf("%s", pw);
+
+
+if( match(name,pw) == 0 )
+welcome( good );
+else
+goodbye(evil );
+}
+
+^C
+ishan@spec08:~/CIS551-ComputerNetworksAndSecurity/1_Assignment/3_part> exit
+exit
+
+Script done on Sun 28 Sep 2014 11:15:46 PM EDT

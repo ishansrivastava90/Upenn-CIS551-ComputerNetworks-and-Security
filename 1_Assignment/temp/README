@@ -1,0 +1,14 @@
+General Payload - 
+Modifying the attack to give the attacker access to shell by executing the /bin/sh command. 
+
+Logic - 
+Using the assembly language we get the hexcode to be injected to provide the interactive access. On the stack we have evil on top of good which is on top of password and then comes the name.
+So we had to insert the address of hexcode at the place of return address to main. We needed to overflow the name buffer all the way upto the top of the stack where the return address of the main 
+was stored. We overflowed the buffer with 240 0's and then placed the hex code address at the place of the return address. Care taken such that name and password have some data in them else it 
+would lead to exit function being invoked without making the program return to the main func.
+
+Steps  
+
+1) Run - make attack
+2) Run - ./generate_input.sh | ./badbuf
+3) Press enter few times and use the shell

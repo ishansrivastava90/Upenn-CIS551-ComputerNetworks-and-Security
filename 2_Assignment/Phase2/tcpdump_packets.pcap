@@ -1,0 +1,143 @@
+13:22:53.561764 IP (tos 0x0, ttl 64, id 44994, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [S], cksum 0x14f4 (correct), seq 2321061768, win 29200, options [mss 1460,sackOK,TS val 342090 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c afc2 4000 4006 07a4 c0a8 0104  E..<..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9788 0000 0000  .....>)7.X......
+	0x0020:  a002 7210 14f4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  0005 384a 0000 0000 0103 0307            ..8J........
+13:22:53.562892 IP (tos 0x0, ttl 64, id 44995, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x747d (correct), seq 2321061769, ack 2049744908, win 229, options [nop,nop,TS val 342090 ecr 75300], length 0
+	0x0000:  4500 0034 afc3 4000 4006 07ab c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9789 7a2c a00c  .....>)7.X..z,..
+	0x0020:  8010 00e5 747d 0000 0101 080a 0005 384a  ....t}........8J
+	0x0030:  0001 2624                                ..&$
+13:22:55.639486 IP (tos 0x0, ttl 64, id 44996, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x6df7 (correct), seq 0:7, ack 1, win 229, options [nop,nop,TS val 342598 ecr 75300], length 7
+	0x0000:  4500 003b afc4 4000 4006 07a3 c0a8 0104  E..;..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9789 7a2c a00c  .....>)7.X..z,..
+	0x0020:  8018 00e5 6df7 0000 0101 080a 0005 3a46  ....m.........:F
+	0x0030:  0001 2624 7a86 8c7a 7a79 83              ..&$z..zzy.
+13:22:56.424312 IP (tos 0x0, ttl 64, id 44997, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0xf61b (correct), seq 7:9, ack 1, win 229, options [nop,nop,TS val 342806 ecr 75567], length 2
+	0x0000:  4500 0036 afc5 4000 4006 07a7 c0a8 0104  E..6..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9790 7a2c a00c  .....>)7.X..z,..
+	0x0020:  8018 00e5 f61b 0000 0101 080a 0005 3b16  ..............;.
+	0x0030:  0001 272f 7a79                           ..'/zy
+13:22:56.427645 IP (tos 0x0, ttl 64, id 44998, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x7039 (correct), seq 9, ack 2, win 229, options [nop,nop,TS val 342806 ecr 75666], length 0
+	0x0000:  4500 0034 afc6 4000 4006 07a8 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9792 7a2c a00d  .....>)7.X..z,..
+	0x0020:  8010 00e5 7039 0000 0101 080a 0005 3b16  ....p9........;.
+	0x0030:  0001 2792                                ..'.
+13:22:56.432430 IP (tos 0x0, ttl 64, id 44999, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x6f67 (correct), seq 9, ack 201, win 237, options [nop,nop,TS val 342808 ecr 75667], length 0
+	0x0000:  4500 0034 afc7 4000 4006 07a7 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9792 7a2c a0d4  .....>)7.X..z,..
+	0x0020:  8010 00ed 6f67 0000 0101 080a 0005 3b18  ....og........;.
+	0x0030:  0001 2793                                ..'.
+13:23:02.003474 IP (tos 0x0, ttl 64, id 45000, offset 0, flags [DF], proto TCP (6), length 53)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x1bee (correct), seq 9:10, ack 201, win 237, options [nop,nop,TS val 344200 ecr 75667], length 1
+	0x0000:  4500 0035 afc8 4000 4006 07a5 c0a8 0104  E..5..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9792 7a2c a0d4  .....>)7.X..z,..
+	0x0020:  8018 00ed 1bee 0000 0101 080a 0005 4088  ..............@.
+	0x0030:  0001 2793 4e                             ..'.N
+13:23:03.364060 IP (tos 0x0, ttl 64, id 45001, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0xe03b (correct), seq 10:12, ack 201, win 237, options [nop,nop,TS val 344541 ecr 76387], length 2
+	0x0000:  4500 0036 afc9 4000 4006 07a3 c0a8 0104  E..6..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9793 7a2c a0d4  .....>)7.X..z,..
+	0x0020:  8018 00ed e03b 0000 0101 080a 0005 41dd  .....;........A.
+	0x0030:  0001 2a63 858b                           ..*c..
+13:23:03.398936 IP (tos 0x0, ttl 64, id 45002, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x64cf (correct), seq 12, ack 277, win 237, options [nop,nop,TS val 344549 ecr 76559], length 0
+	0x0000:  4500 0034 afca 4000 4006 07a4 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9795 7a2c a120  .....>)7.X..z,..
+	0x0020:  8010 00ed 64cf 0000 0101 080a 0005 41e5  ....d.........A.
+	0x0030:  0001 2b0f                                ..+.
+13:23:04.809082 IP (tos 0x0, ttl 64, id 45003, offset 0, flags [DF], proto TCP (6), length 55)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x5ed3 (correct), seq 12:15, ack 277, win 237, options [nop,nop,TS val 344902 ecr 76559], length 3
+	0x0000:  4500 0037 afcb 4000 4006 07a0 c0a8 0104  E..7..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9795 7a2c a120  .....>)7.X..z,..
+	0x0020:  8018 00ed 5ed3 0000 0101 080a 0005 4346  ....^.........CF
+	0x0030:  0001 2b0f 898f 7b                        ..+...{
+13:23:04.826968 IP (tos 0x0, ttl 64, id 45004, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x62a5 (correct), seq 15, ack 289, win 237, options [nop,nop,TS val 344906 ecr 76741], length 0
+	0x0000:  4500 0034 afcc 4000 4006 07a2 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9798 7a2c a12c  .....>)7.X..z,.,
+	0x0020:  8010 00ed 62a5 0000 0101 080a 0005 434a  ....b.........CJ
+	0x0030:  0001 2bc5                                ..+.
+13:23:06.931309 IP (tos 0x0, ttl 64, id 45005, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x6170 (correct), seq 15:19, ack 289, win 237, options [nop,nop,TS val 345432 ecr 76741], length 4
+	0x0000:  4500 0038 afcd 4000 4006 079d c0a8 0104  E..8..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 9798 7a2c a12c  .....>)7.X..z,.,
+	0x0020:  8018 00ed 6170 0000 0101 080a 0005 4558  ....ap........EX
+	0x0030:  0001 2bc5 7e90 808a                      ..+.~...
+13:23:06.934496 IP (tos 0x0, ttl 64, id 45006, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x5eb5 (correct), seq 19, ack 488, win 245, options [nop,nop,TS val 345433 ecr 77011], length 0
+	0x0000:  4500 0034 afce 4000 4006 07a0 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 979c 7a2c a1f3  .....>)7.X..z,..
+	0x0020:  8010 00f5 5eb5 0000 0101 080a 0005 4559  ....^.........EY
+	0x0030:  0001 2cd3                                ..,.
+13:23:08.006929 IP (tos 0x0, ttl 64, id 45007, offset 0, flags [DF], proto TCP (6), length 53)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x13a0 (correct), seq 19:20, ack 488, win 245, options [nop,nop,TS val 345701 ecr 77011], length 1
+	0x0000:  4500 0035 afcf 4000 4006 079e c0a8 0104  E..5..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 979c 7a2c a1f3  .....>)7.X..z,..
+	0x0020:  8018 00f5 13a0 0000 0101 080a 0005 4665  ..............Fe
+	0x0030:  0001 2cd3 4a                             ..,.J
+13:23:08.013117 IP (tos 0x0, ttl 64, id 45008, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x5d05 (correct), seq 20, ack 511, win 245, options [nop,nop,TS val 345703 ecr 77149], length 0
+	0x0000:  4500 0034 afd0 4000 4006 079e c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 979d 7a2c a20a  .....>)7.X..z,..
+	0x0020:  8010 00f5 5d05 0000 0101 080a 0005 4667  ....].........Fg
+	0x0030:  0001 2d5d                                ..-]
+13:23:10.164201 IP (tos 0x0, ttl 64, id 45009, offset 0, flags [DF], proto TCP (6), length 55)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x6665 (correct), seq 20:23, ack 511, win 245, options [nop,nop,TS val 346241 ecr 77149], length 3
+	0x0000:  4500 0037 afd1 4000 4006 079a c0a8 0104  E..7..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 979d 7a2c a20a  .....>)7.X..z,..
+	0x0020:  8018 00f5 6665 0000 0101 080a 0005 4881  ....fe........H.
+	0x0030:  0001 2d5d 7a7a 7a                        ..-]zzz
+13:23:10.169979 IP (tos 0x0, ttl 64, id 45010, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x59b5 (correct), seq 23, ack 541, win 245, options [nop,nop,TS val 346242 ecr 77425], length 0
+	0x0000:  4500 0034 afd2 4000 4006 079c c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97a0 7a2c a228  .....>)7.X..z,.(
+	0x0020:  8010 00f5 59b5 0000 0101 080a 0005 4882  ....Y.........H.
+	0x0030:  0001 2e71                                ...q
+13:23:10.173730 IP (tos 0x0, ttl 64, id 45011, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x58e3 (correct), seq 23, ack 740, win 254, options [nop,nop,TS val 346243 ecr 77426], length 0
+	0x0000:  4500 0034 afd3 4000 4006 079b c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97a0 7a2c a2ef  .....>)7.X..z,..
+	0x0020:  8010 00fe 58e3 0000 0101 080a 0005 4883  ....X.........H.
+	0x0030:  0001 2e72                                ...r
+13:23:11.568277 IP (tos 0x0, ttl 64, id 45012, offset 0, flags [DF], proto TCP (6), length 53)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x0c7d (correct), seq 23:24, ack 740, win 254, options [nop,nop,TS val 346592 ecr 77426], length 1
+	0x0000:  4500 0035 afd4 4000 4006 0799 c0a8 0104  E..5..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97a0 7a2c a2ef  .....>)7.X..z,..
+	0x0020:  8018 00fe 0c7d 0000 0101 080a 0005 49e0  .....}........I.
+	0x0030:  0001 2e72 4b                             ...rK
+13:23:11.572391 IP (tos 0x0, ttl 64, id 45013, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x56a5 (correct), seq 24, ack 784, win 254, options [nop,nop,TS val 346593 ecr 77605], length 0
+	0x0000:  4500 0034 afd5 4000 4006 0799 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97a1 7a2c a31b  .....>)7.X..z,..
+	0x0020:  8010 00fe 56a5 0000 0101 080a 0005 49e1  ....V.........I.
+	0x0030:  0001 2f25                                ../%
+13:23:15.674352 IP (tos 0x0, ttl 64, id 45014, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x4711 (correct), seq 24:31, ack 784, win 254, options [nop,nop,TS val 347618 ecr 77605], length 7
+	0x0000:  4500 003b afd6 4000 4006 0791 c0a8 0104  E..;..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97a1 7a2c a31b  .....>)7.X..z,..
+	0x0020:  8018 00fe 4711 0000 0101 080a 0005 4de2  ....G.........M.
+	0x0030:  0001 2f25 817d 8382 8483 82              ../%.}.....
+13:23:17.092237 IP (tos 0x0, ttl 64, id 45015, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [P.], cksum 0x4d1b (correct), seq 31:35, ack 784, win 254, options [nop,nop,TS val 347973 ecr 78135], length 4
+	0x0000:  4500 0038 afd7 4000 4006 0793 c0a8 0104  E..8..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97a8 7a2c a31b  .....>)7.X..z,..
+	0x0020:  8018 00fe 4d1b 0000 0101 080a 0005 4f45  ....M.........OE
+	0x0030:  0001 3137 8181 807f                      ..17....
+13:23:17.104957 IP (tos 0x0, ttl 64, id 45016, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x4e4e (correct), seq 35, ack 817, win 254, options [nop,nop,TS val 347976 ecr 78313], length 0
+	0x0000:  4500 0034 afd8 4000 4006 0796 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97ac 7a2c a33c  .....>)7.X..z,.<
+	0x0020:  8010 00fe 4e4e 0000 0101 080a 0005 4f48  ....NN........OH
+	0x0030:  0001 31e9                                ..1.
+13:23:17.116044 IP (tos 0x0, ttl 64, id 45017, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.4.47678 > 192.168.1.1.10551: Flags [.], cksum 0x4d7b (correct), seq 35, ack 1016, win 262, options [nop,nop,TS val 347979 ecr 78314], length 0
+	0x0000:  4500 0034 afd9 4000 4006 0795 c0a8 0104  E..4..@.@.......
+	0x0010:  c0a8 0101 ba3e 2937 8a58 97ac 7a2c a403  .....>)7.X..z,..
+	0x0020:  8010 0106 4d7b 0000 0101 080a 

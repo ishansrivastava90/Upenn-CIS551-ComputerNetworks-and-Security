@@ -1,0 +1,33 @@
+We have implemented a client-server connection accross the Drone.
+The files that we are using :
+
+badbuf_server.c : This is the server code which establishes a connection with the client. It creates a connection, authenticates the client and then providea a menu to the client from which the client can execute further instructions.
+
+client.c : This is the client code which connects to the server, enters the login and password. Once, the server authenticates the client, the client can perform other functions (add a new user and update its password).
+update
+
+passwordVault: This contains the list of all valid users and their respective passwords.
+
+update_password.h : This header file contains the code to update the password after an authenticated user logs into the drone.
+
+authenticate.h : This header file contains code for authentication.
+
+add_user.h : This header contains code to add a new user after an authenticated user logs in.
+
+util.h : It contains the code to modify the linked list structure to add new items, retreive values from existing items and modify the passwordVault text file.
+
+symlist.h : This contains the declarations for the linked list structure.
+
+symbol.h : This contains the definition of the structure which is used as a component for the structure defined in sym_list.h
+
+defs.h : These define the values of all global variables.
+
+demo.h : This stores the declarations of various functions called in util.h
+
+Instructions to compile and run :
+
+The makefile contains the compilation for both the client and server side.
+Run make compile to compile both the server and client codes.
+FTP badbuf_server and passwordVault to the drone.
+Run ./badbuf_server to execute the server on the drone.
+Run ./client 192.168.1.1. to execute the client on the client host.

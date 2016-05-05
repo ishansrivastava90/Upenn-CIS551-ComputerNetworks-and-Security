@@ -1,0 +1,110 @@
+Script started on Wed 05 Nov 2014 02:35:59 AM EST
+]0;rakshita@rakshita: ~/Downloadsrakshita@rakshita:~/Downloads$ ./client 192.168.1.1
+Connected To The Server
+login: anudeep
+password: hero
+Invalid identity, exiting!
+]0;rakshita@rakshita: ~/Downloadsrakshita@rakshita:~/Downloads$ ./client 192.168.1.1
+Connected To The Server
+login: anudeep
+password: pwd
+Welcome to  The Machine!
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+1
+abc
+Password successfully updated
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+2
+Enter the username and password to be added
+rakshita
+ishan
+User has been successfully added
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+3
+Enter the mac address and port to bind
+7c:fa:df:b7:52:34
+23
+MAC address has been successfully bound
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+3
+Enter the mac address and port to bind
+30:3a:64:63:e6:5b
+22
+MAC address has been successfully bound
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+4
+Enter the mac address and port to unbind
+7c:fa:df:b7:52:34
+23
+MAC address has been successfully unbound
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+5
+Use exit to exit the shell and return to the main menu
+ls
+12.txt
+3tier.jpg
+badbuf_server
+boxes
+ip
+passwordVault
+police-notice.html.gz
+pwd
+/data/video
+cat 12.txt
+dshdjsdhjshd
+exit
+Menu
+1) Enter 1 to update your password.
+2) Enter 2 to add a new user
+3) Enter 3 to bind your MAC with server
+4) Enter 4 unbind your MAC with server
+5) Enter 5 to spawn a shell
+6) Enter 6 to logout
+
+6
+]0;rakshita@rakshita: ~/Downloadsrakshita@rakshita:~/Downloads$ exit
+exit
+
+Script done on Wed 05 Nov 2014 02:42:46 AM EST

@@ -1,0 +1,142 @@
+Script started on Wed 05 Nov 2014 02:36:01 AM EST
+]0;root@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIroot@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII# make [K[K[K[K[Kls
+add_user.h      [0m[01;32mbadbuf_server[0m    [01;32mbadbuf_server.c~[0m  client.c  demo.h     execute_command.h  makefile       symbol.h   typescript_server  util.h
+authenticate.h  [01;32mbadbuf_server.c[0m  [01;32mclient[0m            defs.h    encrypt.h  mac_binding.h      passwordVault  symlist.h  update_password.h
+]0;root@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIroot@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII# make compile
+arm-linux-gnueabi-gcc-4.7 -o badbuf_server badbuf_server.c
+badbuf_server.c: In function ‘welcome’:
+badbuf_server.c:19:1: warning: format not a string literal and no format arguments [-Wformat-security]
+badbuf_server.c: In function ‘goodbye’:
+badbuf_server.c:21:1: warning: format not a string literal and no format arguments [-Wformat-security]
+gcc -o client client.c
+]0;root@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIroot@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII# ftp 192.168.1.1
+Connected to 192.168.1.1.
+220 Operation successful
+Name (192.168.1.1:root): 
+230 Operation successful
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put badbuf_server
+local: badbuf_server remote: badbuf_server
+200 Operation successful
+553 Error
+ftp> put passwordVault 
+local: passwordVault remote: passwordVault
+200 Operation successful
+150 Ok to send data
+226 Operation successful
+216 bytes sent in 0.01 secs (14.9 kB/s)
+ftp> quit
+221 Operation successful
+]0;root@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIroot@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII# telnet 192.168.1.1
+Trying 192.168.1.1...
+Connected to 192.168.1.1.
+Escape character is '^]'.
+
+
+
+BusyBox v1.14.0 () built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# 
+# 
+# cd /data     data/video
+# 
+# ls
+[0;0m12.txt[0m                 [0;0m3tier.jpg[0m              [1;32mbadbuf_server[0m          [1;34mboxes[0m                  [1;32mip[0m                     [0;0mpasswordVault[0m          [0;0mpolice-notice.html.gz[0m
+# chmod 777 badbuf_server
+# ./badbuf_server
+Starting the server....
+Server Up - Socket Created....
+bind on listenfd: Address already in use
+# ps elf     | greo p "badbuf"
+ 1671 root      1624 T    ./badbuf_server 
+ 2264 root      2740 S    grep badbuf 
+# kill -9 1671
+# # kill -9 1671[J# ps | grep "badbuf"[J# ./badbuf_server[J
+Starting the server....
+Server Up - Socket Created....
+Server Up - Socket Bound...
+Waiting for a client.....
+
+
+..Connection established
+
+Name Received - anudeep
+Password Received - hero
+Invalid identity, exiting!
+Waiting for a client.....
+..Connection established
+
+Name Received - anudeep
+Password Received - pwd
+Welcome to The Machine!
+
+
+Client chose option:==1==
+
+New password entered = abc
+
+
+Updating Password for user = anudeep...
+Client chose option:==2==
+
+User to be added Received = rakshita
+Password for the new user Received - ishan
+
+Adding new user = rakshita ...
+
+Client chose option:==3==
+
+Received MAC address = 7c:fa:df:b7:52:34
+Received port = 23
+Client chose option:==3==
+
+Received MAC address = 30:3a:64:63:e6:5b
+Received port = 22
+Client chose option:==4==
+
+Received MAC address = 7c:fa:df:b7:52:34
+Received MAC address = 7c:fa:df:b7:52:34
+
+
+
+Client chose option:==5==
+
+Executing Command1
+Executing Command
+Received command from client = ls
+The result is 
+ 12.txt
+3tier.jpg
+badbuf_server
+boxes
+ip
+passwordVault
+police-notice.html.gz
+
+Executing Command
+Received command from client = pwd
+The result is 
+ /data/video
+
+Executing Command
+Received command from client = cat 12.txt 
+The result is 
+ dshdjsdhjshd
+
+Executing Command
+Received command from client = exit
+
+
+
+Client chose option:==6==
+
+Waiting for a client.....
+
+
+Killed
+]0;root@ishan-Lenovo-Y40-70: ~/Documents/Networks/PhaseIIroot@ishan-Lenovo-Y40-70:~/Documents/Networks/PhaseII# exit
+exit
+
+Script done on Wed 05 Nov 2014 02:44:52 AM EST
